@@ -3,7 +3,6 @@
 import React from 'react';
 import { FullpageSection } from '@ap.cx/react-fullpage'; // 풀 페이지
 
-import { Route,Routes } from 'react-router-dom';
 
 
 

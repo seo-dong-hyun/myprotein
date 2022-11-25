@@ -9,10 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // �
 import Header from './components/Header/Header'; // 헤더
 
 
-import Main from './components/Main/Main';
-import Section1 from './components/Section1/Section1';
-import Page1 from './Page1';
-import Page2 from './Page2';
+
 
 
 
@@ -24,19 +21,20 @@ function App() {
     <div className="App">
       <Reset />
       {/* 리셋 css */}
-      {/* <FullPageScroll /> */}
+      <FullPageScroll />
+      <Header />
 
       {/* 원 페이지 스크롤 */}
-
+{/* 
       <Routes>
         <Route exact path='/' element={<Header />}/>
-      </Routes>
+      </Routes> */}
         {/* 헤더 */}
 
 
-        <Routes>
+        {/* <Routes>
           <Route exact path='/' element={<FullPageScroll />}/>
-        </Routes>
+        </Routes> */}
     </div>
     </Router>
 

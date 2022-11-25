@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { Routes, Route } from 'react-router-dom';
 import FullPageScroll from '../FullPageScroll/FullPageScroll';
-import Sub1 from './Sub1';
 
 
 function GnbLi() {
@@ -31,9 +30,7 @@ function GnbLi() {
         </li>
 
         
-        <Routes>
-          <Route exact path='/protein' element={<Sub1 />} />
-        </Routes>
+
         
         </React.Fragment>
       )
