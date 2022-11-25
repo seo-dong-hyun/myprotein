@@ -1,0 +1,291 @@
+/* header css */
+@charset "utf-8";
+
+/* 헤더 */
+.header-wrap {
+    position: fixed;
+    width: calc(100% - 50px);
+    height: 60px;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .45);
+    z-index: 400;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* 
+header.pc {
+    background: plum;
+}
+header.mo {
+    background-color: seagreen;
+} */
+/* 로고 */
+.logo-wrap {
+    position: absolute;
+    left: 20px;
+    width: 120px;
+    height: 100%;
+}
+
+.logo-wrap h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    display: block;
+    background-image: url('/public/images/logo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.gnb {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.gnb .list-wrap {
+    display: inline-block;
+    height: 100%;
+}
+
+.gnb-ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.gnb-li {
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+}
+
+.gnb-li-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+}
+
+
+/* hamburger btn */
+.gnbBtn {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    z-index: 900;
+}
+
+.gnbBtn span {
+    position: absolute;
+    width: 25px;
+    height: 2.52px;
+    background: #222;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.gnbBtn span:first-child {
+    top: 8px;
+}
+
+.gnbBtn span:last-child {
+    top: 24px;
+}
+
+.gnbBtn.active span:first-child {
+    top: 16px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.gnbBtn.active span:nth-child(2) {
+    display: none;
+}
+
+.gnbBtn.active span:last-child {
+    top: 16px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* mobile gnb css */
+.mo .logo-wrap {
+    position: relative;
+}
+
+.mo .gnb {
+    position: absolute;
+    right: -100%;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all .3s ease;
+}
+
+.mo .gnb.active {
+    right: 0;
+    opacity: 1;
+
+}
+
+
+
+/* .header-w {
+    position: fixed;
+    width: calc(100% - 50px);
+    height: 65px;
+    top: 16px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .45);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-w {
+    position: absolute;
+    left: 20px;
+    width: 120px;
+    height: 100%;
+}
+
+.logo {
+    background-image: url('/public/images/logo.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.gnb {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.gnb-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.gnb-ul.active {
+    flex-direction: column;
+    text-align: left;
+    height: 100vh;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .45);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gnb-li {
+    display: inline-block;
+    width: 120px;
+}
+
+
+.gnb-li.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gnb-li.signUp {
+    position: absolute;
+    right: 20px;
+}
+
+.gnb-li-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.gnbBtn {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    z-index: 900;
+}
+
+.gnbBtn span {
+    position: absolute;
+    width: 25px;
+    height: 2.52px;
+    background: #222;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+}
+
+
+.gnbBtn span:first-child {
+    top: 8px;
+}
+
+.gnbBtn span:last-child {
+    top: 24px;
+}
+
+.gnbBtn.active span:first-child {
+    top: 16px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.gnbBtn.active span:nth-child(2) {
+    display: none;
+}
+
+.gnbBtn.active span:last-child {
+    top: 16px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+
+@media screen and (max-width: 1200px){
+    .gnbBtn {
+        display: block;
+    }
+} */
