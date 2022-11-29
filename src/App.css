@@ -1,8 +1,10 @@
 /* App.css */
+
 @charset "utf-8";
 
 
 /* initialize css */
+
 html, body {
   overflow-x: hidden;
 }

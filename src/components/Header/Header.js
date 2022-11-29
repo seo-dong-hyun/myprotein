@@ -1,40 +1,4 @@
-//               <li className="gnb-li">
-//                 <Link to='/' className='gnb-li-link'>
-//                   Home
-//                 </Link>
-//               </li>
-
-//               <li className="gnb-li">
-//                 <Link to='/protein' className='gnb-li-link'>
-//                   Protein
-//                 </Link>
-//               </li>
-
-//               <li className="gnb-li">
-//                 <Link to='/boosters' className='gnb-li-link'>
-//                   Boosters
-//                 </Link>
-//               </li>
-
-//               <li className="gnb-li">
-//                 <Link to='/vitamins' className='gnb-li-link'>
-//                   Vitamins
-//                 </Link>
-//               </li>
-
-//               <li className="gnb-li">
-//                 <Link to='/event' className='gnb-li-link'>
-//                   Event
-//                 </Link>
-//               </li>
-
-//               <li className="gnb-li">
-//                 <Link to='/signUp' className='gnb-li-link'>
-//                   회원가입
-//                 </Link>
-//               </li>
-
-
+// Header.js 헤더
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -100,7 +64,7 @@ function Header() {
         {/* 클래스 네임 true: pc, false: mo */}
         <div className="logo-wrap">
           <h1>
-            <Link to='/' className='logo'></Link>
+            <Link to='/myprotein' className='logo' onClick={ () => window.location.replace()}></Link>
           </h1>
         </div>
 
