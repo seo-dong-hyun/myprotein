@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/myprotein/static/css/main.424e0eab.css",
-    "main.js": "/myprotein/static/js/main.648093be.js",
+    "main.js": "/myprotein/static/js/main.71de5671.js",
     "index.html": "/myprotein/index.html",
     "main.424e0eab.css.map": "/myprotein/static/css/main.424e0eab.css.map",
-    "main.648093be.js.map": "/myprotein/static/js/main.648093be.js.map"
+    "main.71de5671.js.map": "/myprotein/static/js/main.71de5671.js.map"
   },
   "entrypoints": [
     "static/css/main.424e0eab.css",
-    "static/js/main.648093be.js"
+    "static/js/main.71de5671.js"
   ]
 }
