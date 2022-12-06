@@ -15,7 +15,6 @@ import MainSection3 from './MainSection3/MainSection3'; // 메인 섹션3
 function Main() {
   return (
     <div>
-
       <Fullpage>
           <FullpageNavigation />
           <FullPageSections>

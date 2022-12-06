@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import GnbLi from './GnbLi';  // gnb-li
+import Loading from '../../Loading';
 
 
 function Header() {
@@ -64,7 +65,7 @@ function Header() {
         {/* 클래스 네임 true: pc, false: mo */}
         <div className="logo-wrap">
           <h1>
-            <Link to='/myprotein' className='logo' onClick={ () => window.location.replace()}></Link>
+            <Link to='/myprotein' className='logo' onClick={<Loading />}></Link>
           </h1>
         </div>
 
