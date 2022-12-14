@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/myprotein/static/css/main.4cae03de.css",
-    "main.js": "/myprotein/static/js/main.bbd89e6c.js",
+    "main.js": "/myprotein/static/js/main.d9e331b4.js",
     "static/media/RobotoMono-Regular.ttf": "/myprotein/static/media/RobotoMono-Regular.34e46962590bff8eefe5.ttf",
     "index.html": "/myprotein/index.html",
     "main.4cae03de.css.map": "/myprotein/static/css/main.4cae03de.css.map",
-    "main.bbd89e6c.js.map": "/myprotein/static/js/main.bbd89e6c.js.map"
+    "main.d9e331b4.js.map": "/myprotein/static/js/main.d9e331b4.js.map"
   },
   "entrypoints": [
     "static/css/main.4cae03de.css",
-    "static/js/main.bbd89e6c.js"
+    "static/js/main.d9e331b4.js"
   ]
 }
