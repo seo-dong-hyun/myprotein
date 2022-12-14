@@ -21,28 +21,28 @@ import Loading from './Loading'; // 로딩화면
 
 
 function App() {
-
-  const [loading, setLoading] = useState(false);
+ // 1
+  // const [loading, setLoading] = useState(false);
   
-  async function fetchUsers() {
+  // async function fetchUsers() {
 
-      setLoading(true);
-      await axios.get('https://seo-dong-hyun.github.io/myprotein')
-                 .then( ()=> {
-                  setTimeout(setLoading, 600, false);
-                  console.log('loading 유즈이펙트 실행');
-                 })
-                 .catch(console.error)
-  }
+  //     setLoading(true);
+  //     await axios.get('http://localhost:55365/')
+  //                .then( ()=> {
+  //                 setTimeout(setLoading, 600, false);
+  //                 console.log('loading 유즈이펙트 실행');
+  //                })
+  //                .catch(console.error)
+  // }
 
-    useEffect( () => {
-      fetchUsers();
-    },[]);
+  //   useEffect( () => {
+  //     fetchUsers();
+  //   },[]);
 
 
     
 
-// 1번
+// 2번
   // const [users, setUsers] = useState(null);
   // const [loading, setLoading] = useState(false);
 
@@ -68,43 +68,43 @@ function App() {
 
 
 
-//   // 2방법
-//   const [loading, setLoading] = useState(null);
+//   // 3방법
+  const [loading, setLoading] = useState(null);
 
-//   const httpInstance = axios.create({
-//     baseURL: 'http://localhost:3000/myprotein',
-//     timeout: 30000,
-//     headers: {
-//       'content-type': 'application/json; charset=UTF-8',
-//     },
-//     withCredentials: true,
-//   });
-//   // 헤더에 인증 추가
-//   // httpInstance.defaults.headers.common.Authorization = `JWT TOKEN AUTHORIZATION`;
+  const httpInstance = axios.create({
+    baseURL: 'https://seo-dong-hyun.github.io/myprotein',
+    timeout: 30000,
+    headers: {
+      'content-type': 'application/json; charset=UTF-8',
+    },
+    withCredentials: true,
+  });
+  // 헤더에 인증 추가
+  // httpInstance.defaults.headers.common.Authorization = `JWT TOKEN AUTHORIZATION`;
   
-//   useEffect(() => {
-//     const goload = async() => {
-//       try {
-//         setLoading(true);
+  useEffect(() => {
+    const goload = async() => {
+      try {
+        setLoading(true);
         
-//         await httpInstance.post(
-//           'http://localhost:3000/myprotein',
-//         ).then((response) => {
-//          console.log(response);
-//         })
-//       } catch (e) {
-//        console.log(e)
-//       }
+        await httpInstance.post(
+          'https://seo-dong-hyun.github.io/myprotein',
+        ).then((response) => {
+         console.log(response);
+        })
+      } catch (e) {
+       console.log(e)
+      }
 
-//       setTimeout( () => {
-//         setLoading(false);
-//       },800)
+      setTimeout( () => {
+        setLoading(false);
+      },800)
       
-//       // setTimeout(setLoading, 800, false);
-//     }
+      // setTimeout(setLoading, 800, false);
+    }
     
-// goload();
-//   }, []);
+goload();
+  }, []);
   
 
 

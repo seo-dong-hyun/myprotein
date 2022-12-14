@@ -8,11 +8,11 @@ function GnbLi() {
   
       const gnbLi = [
     { id: 0, name: "Home", address: "/myprotein"},
-    { id: 1, name: "Protein", address: "protein"},
-    { id: 2, name: "Boosters", address: "boosters"},
-    { id: 3, name: "Vitamins", address: "vitamins"},
-    { id: 4, name: "Event", address: "event"},
-    { id: 5, name: "회원가입", address: "signUp"},
+    { id: 1, name: "Protein", address: "/protein"},
+    { id: 2, name: "Boosters", address: "/boosters"},
+    { id: 3, name: "Vitamins", address: "/vitamins"},
+    { id: 4, name: "Event", address: "/event"},
+    { id: 5, name: "회원가입", address: "/signUp"},
 
   ];
 
